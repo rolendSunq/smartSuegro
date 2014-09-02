@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/ico/favicon.png"><!-- favicon.png 이미지 만들어 넣을 것 -->
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+		<title>Smart Suegro HOME</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="assets/js/html5shiv.js"></script>
+		  <script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Custom styles for this template -->
+		<link href="assets/css/carousel.css" rel="stylesheet">
+		<style type="text/css">
+			.login-form {
+				padding: 7px 7px 7px 7px;
+			}
+
+			#username, #password {
+				margin-bottom: 5px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document)
+		</script>
+	</head>
+	<body>
+		<!-- NAVBAR START ================================================== -->
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navbar navbar-inverse navbar-static-top">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><i class="icon-home"></i> Smart Suegro</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-mobile-phone"></i> SAMSUNG <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">SKT</a></li>
+									<li><a href="#">KT</a></li>
+									<li><a href="#">LG U+</a></li>
+								</ul>
+							</li> 
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-mobile-phone"></i> LG <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Product-1</a></li>
+									<li><a href="#">Product-2</a></li>
+									<li><a href="#">Product-3</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-apple"></i> Apple <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">3GS</a></li>
+									<li><a href="#">4G/4GS</a></li>
+									<li><a href="#">5GS</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-wrench"></i> A/S <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Product-1</a></li>
+									<li><a href="#">Product-2</a></li>
+									<li><a href="#">Product-3</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-coffee"></i> 고객지원 <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Product-1</a></li>
+									<li><a href="#">Product-2</a></li>
+									<li><a href="#">Product-3</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> 로그인<b class="caret"></b></a>
+								<div class="dropdown-menu login-form">
+									<form method="post" action="login" accept-charset="UTF-8">
+										<input type="text" class="form-control" placeholder="아이디" id="username" name="username">
+										<input type="text" class="form-control" placeholder="비밀번호" id="password" name="password">
+										<input class="btn btn-block" type="submit" id="sign-in" value="로그인">
+										<button type="submit" class="btn btn-primary btn-block"><i class="icon-signin"></i> 회원가입</button>
+									</form>
+								</div>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-suitcase"></i> MyShopping<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><i class="icon-shopping-cart"></i> 장바구니</a></li>
+									<li><a href="#"><i class="icon-list-alt"></i> 위시리스트</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- nav-tab START ================================================== -->
+			<div class="navtab-wrapper">
+				<div class="container">
+					<div class="navbar-header">  
+						<ul class="nav nav-tabs">  
+							<li><a href="#">장바구니</a></li>  
+							<li><a href="#">위시리스트</a></li>  
+							<li class="active"><a href="#">주문/배송조회</a></li>
+							<li><a href="#">적립금조회</a></li>
+						</ul>  
+					</div>  
+				</div>
+			</div>
+			<!-- nav-tab END ================================================== -->
+		</div>
+			<!-- NAVBAR END ================================================== -->
+		
+		<!-- contents START ================================================== -->
+		<div class="bucket-wrapper">
+			<div class="container">
+				<div class="container marketing">
+					<div class="row featurette">
+						<div class="col-md-8 col-md-offset-1">
+							<fieldset>
+								<form action="#" method="post" class="form-horizontal" id="orderFindMember" accept-charset="utf-8">
+									<div class="form-group">
+										<br><br>
+									</div>								
+									
+									<div class="form-group">
+										<p><i class="icon-user"></i> 회원으로 구매 하실려면 로그인 하세요.</p>
+									</div>
+						 
+									<div class="form-group">
+										<label for="id" class="control-label">	
+											ID를 입력하세요.
+										</label>
+										<div class="controls">
+											<input type="text" name="userId" class="form-control" placeholder="user ID"  value="" id="userId">
+											<span class="help-inline">  10자 이상/대소, 특수 문자 허용안함</span>
+										</div>
+									</div>
+						 
+									<div class="form-group">
+										<label for="password" class="control-label">	
+											비밀번호를 입력해주세요.
+										</label>
+										<div class="controls">
+											<input type="text" name="password" class="form-control" placeholder="비밀번호 입력"value="" id="password">
+										</div>
+									</div>
+						 
+									<div class="form-actions">
+										<button type="submit" class="btn btn-primary">확인</button>
+										<button type="button" class="btn btn-primary"> 아이디/비밀번호 찾기</button>
+										<button type="button" class="btn btn-primary"> 회원가입</button>
+									</div>
+								</form>
+							</fieldset>
+							<hr class="featurette-divider">
+							<fieldset>
+								<form action="#" method="post" class="form-horizontal" id="orderFindNoMember" accept-charset="utf-8">
+									<div class="form-group">
+										<p><i class="icon-circle"></i> 비회원 정보 입력</p>
+									</div>
+						 
+									<div class="form-group">
+										<label for="noneUser" class="control-label">	
+											주문자명
+										</label>
+										<div class="controls">
+											<input type="text" name="noneUser" class="form-control" placeholder="주문자명 입력"  value="" id="noneUser">
+											<span class="help-inline">  12자의 문자를 정확히 입력하세요.</span>
+										</div>
+									</div>
+						 
+									<div class="form-group">
+										<label for="orderNumber" class="control-label">	
+											주문번호
+										</label>
+										<div class="controls">
+											<input type="text" name="orderNumber" class="form-control" placeholder="주문번호 입력"value="" id="orderNumber">
+										</div>
+									</div>
+						 
+									<div class="form-actions">
+										<button type="submit" class="btn btn-primary"> 확인</button>
+										<button type="button" class="btn btn-primary"> 주문번호 찾기</button>
+										<button type="button" class="btn btn-primary"> 회원가입</button>
+									</div>
+								</form>
+							</fieldset>
+						</div>
+					</div>
+					<div class="row featurette" id="orderListResult">
+						<div class="col-md-8 col-md-offset-1 form-group">
+							<table class="table">
+								<tr>
+									<th>주문일자</th>
+									<th>주문번호</th>
+									<th>결제금액</th>
+									<th>결제방법</th>
+									<th>주문상태</th>
+									<th>배송추척</th>
+									<th>상세보기</th>
+									<th>영수증</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<hr class="featurette-divider">
+		<!-- contents END ================================================== -->
+
+					<!-- FOOTER START (!!! 주의 Footer 부분 !!!!) -->
+					<footer>
+						<p class="pull-right"><a href="#">Back to top</a></p>
+						<p>&copy; 2013 Company, Smart Suegro Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+					</footer>
+					<!-- FOOTER END -->
+				</div><!-- container END -->
+			</div>
+		</div>
+		<!-- Bootstrap core JavaScript ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/holder.js"></script>
+	</body>
+</html>
